@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta></meta>
+ <script type="text/javascript" src="parsePath_old.js"></script>
+</head>
+
+<body>
+<div class="cycle-outer">
+	<div class="cycle-wrapper">
+		<div class="cycle-body">
+			<div class="seat">
+				<span></span>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var path = 'a.b[1].v';
+var path2 = 'a]'
+var obj = {
+  a: {
+    b: [
+      {v: 1},
+      {v: 2},
+      {v: 3}
+    ]
+  }
+}
+var path1 = parsePath(path2);
+console.log(path1);
+</script>
+</body>
+<html>
